@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "React 19 Resmi Dirilis: Apa Saja Fitur Barunya?",
+    "author": "Jane Doe",
+    "imageUrl": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 2,
+    "title": "Perbedaan Mendasar Antara useEffect dan useLayoutEffect",
+    "author": "John Smith",
+    "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 3,
+    "title": "Panduan Lengkap State Management dengan Zustand",
+    "author": "Emily White",
+    "imageUrl": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww"
+  }
+]
