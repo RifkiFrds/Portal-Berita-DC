@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import ArticleCard from "./ArticleCard";
 
 function ArticleList() {
   // 1. Siapkan "Holy Trinity" states
@@ -44,16 +45,12 @@ function ArticleList() {
 
   return (
     <div>
-      <h2>Daftar Artikel Saat Ini</h2>
-      <ul className="list-group">
+      <h2 className="text-2xl font-bold mb-4">Daftar Artikel Terkini</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {articles.map(article => (
-          <li key={article.id} className="list-group-item">
-            {article.title} - oleh {article.author}
-            <img className="img-fluid rounded mb-2" src={article.imageUrl} alt="imgArticle" />
-          </li>
-          
+          <ArticleCard key={article.id} article={article} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
