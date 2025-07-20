@@ -6,7 +6,6 @@ function Header({ siteTitle }) {
   return (
     <header className="bg-gray-800 text-white shadow-lg">
       <div className="container mx-auto px-4 py-6 text-center">
-        {/* Judul Situs */}
         <h1 className="text-4xl font-bold tracking-tight">
           {siteTitle}
         </h1>
