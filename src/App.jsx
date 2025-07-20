@@ -6,21 +6,21 @@ import './App.css';
 
 import HomePage from "./pages/HomePage";
 import ArticleDetailPages from "./pages/ArticleDetailPages";
+import AboutPage from "./pages/AboutPage";
 
 
 function App() {
   return (
-    <div className="flex flex-col min-h-sreen">
+    <div className="flex flex-col min-h-srceen">
     <Header siteTitle="JUMT News" /> 
 
     <main className="conatiner mx-auto px-4 py-4 flex-grow">
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/article/:id' element={<ArticleDetailPages />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </main>
-
-      <ArticleList />
 
     <Footer authorName="Muhamad Rifki Firdaus"/>
     </div>
