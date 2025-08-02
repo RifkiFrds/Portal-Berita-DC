@@ -11,10 +11,10 @@ function ArticleList() {
   useEffect(() => {
     // fungsi fecth berada di dalam useEffect
     const fetchArticles = async () => {
-    try {
-      const response = await fetch('/mock-articles.json');
-      if (!response.ok) {
-          throw new Error('Gagal mengambil data artikel');
+      try {
+        const response = await fetch("/mock-articles.json");
+        if (!response.ok) {
+          throw new Error("Gagal mengambil data artikel");
         }
         const data = await response.json();
         setArticles(data); // Data berhasil didapat
@@ -40,14 +40,16 @@ function ArticleList() {
   }
 
   if (error) {
-    return <div className="alert alert-danger">Error: {error}</div>
+    return <div className="alert alert-danger">Error: {error}</div>;
   }
 
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-4 text-center">Daftar Artikel Terkini</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">
+        Daftar Artikel Terkini
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {articles.map(article => (
+        {articles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
@@ -55,4 +57,4 @@ function ArticleList() {
   );
 }
 
-export default ArticleList
+export default ArticleList;
