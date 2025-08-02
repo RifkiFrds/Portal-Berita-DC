@@ -1,10 +1,8 @@
-import React from 'react'
-import ArticleList from '../components/ArticleList'
+import React from "react";
+import ArticleList from "../components/ArticleList";
 
 function HomePage() {
-  return (
-    <ArticleList />
-  )
+  return <ArticleList />;
 }
 
-export default HomePage
+export default HomePage;
