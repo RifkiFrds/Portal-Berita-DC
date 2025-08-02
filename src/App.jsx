@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage";
 import ArticleDetailPages from "./pages/ArticleDetailPages";
 import AboutPage from "./pages/AboutPage";
 
-
 function App() {
   return (
    <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 ...">
