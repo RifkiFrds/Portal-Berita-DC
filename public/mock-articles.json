@@ -19,5 +19,26 @@
     "author": "Emily White",
     "imageUrl": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww",
     "content": "Zustand hadir sebagai alternatif yang ringan dan sederhana untuk manajemen state global di React, menawarkan pendekatan yang lebih minimalis dibandingkan Redux atau MobX..."
+  },
+    {
+    "id": 4,
+    "title": "Panduan Lengkap dengan Zustand",
+    "author": "Emily White",
+    "imageUrl": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww",
+    "content": "Zustand hadir sebagai alternatif yang ringan dan sederhana untuk manajemen state global di React, menawarkan pendekatan yang lebih minimalis dibandingkan Redux atau MobX..."
+  },
+    {
+    "id": 5,
+    "title": "Panduan Lengkap State Management",
+    "author": "Emily White",
+    "imageUrl": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww",
+    "content": "Zustand hadir sebagai alternatif yang ringan dan sederhana untuk manajemen state global di React, menawarkan pendekatan yang lebih minimalis dibandingkan Redux atau MobX..."
+  },
+    {
+    "id": 6,
+    "title": "Panduan Lengkap State ",
+    "author": "Emily White",
+    "imageUrl": "https://images.unsplash.com/photo-1484788984921-03950022c9ef?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wfGVufDB8fDB8fHww",
+    "content": "Zustand hadir sebagai alternatif yang ringan dan sederhana untuk manajemen state global di React, menawarkan pendekatan yang lebih minimalis dibandingkan Redux atau MobX..."
   }
 ]
