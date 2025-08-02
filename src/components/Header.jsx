@@ -1,5 +1,4 @@
 import { useState } from "react";
-import ThemeToggleButton from "./ui/ThemeToggleButton";
 
 function Header({ siteTitle }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,7 +9,6 @@ function Header({ siteTitle }) {
         <h1 className="text-4xl font-bold tracking-tight">
           {siteTitle}
         </h1>
-         <ThemeToggleButton></ThemeToggleButton>
         {/* Search Bar Section */}
         <div className="mt-6 max-w-md mx-auto">
           <div className="relative">

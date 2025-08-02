@@ -6,14 +6,11 @@ import './App.css';
 import HomePage from "./pages/HomePage";
 import ArticleDetailPages from "./pages/ArticleDetailPages";
 import AboutPage from "./pages/AboutPage";
-import { useTheme } from "./hooks/useTheme";
+
 
 function App() {
-  const { theme } = useTheme();
-
   return (
-       <div className={theme === 'dark' ? 'dark' : ''}>
-      <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 ...">
+   <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 ...">
     <div className="flex flex-col min-h-srceen">
     <Header siteTitle="JUMT News" /> 
     </div>
@@ -27,7 +24,6 @@ function App() {
     </main>
 
     <Footer authorName="Muhamad Rifki Firdaus"/>
-    </div>
     </div>
   );
 }
