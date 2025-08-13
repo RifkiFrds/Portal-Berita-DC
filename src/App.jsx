@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -9,15 +10,21 @@ import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleSeachChanges = event => {
+    setSearchTerm(event.target.value)
+  };
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 ...">
       <div className="flex flex-col min-h-srceen">
-        <Header siteTitle="JUMT News" />
+        <Header siteTitle="JUMT News" searchTerm={searchTerm} onSearchChanges={handleSeachChanges} />
       </div>
 
       <main className="conatiner mx-auto px-4 py-4 flex-grow">
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<HomePage searchTerm={searchTerm} />} />
           <Route path="/article/:id" element={<ArticleDetailPages />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFound />} />
