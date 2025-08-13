@@ -1,7 +1,6 @@
-import { useState } from "react";
+import React from "react";
 
-function Header({ siteTitle }) {
-  const [searchTerm, setSearchTerm] = useState("");
+function Header({ siteTitle, searchTerm, onSearchChanges }) {
 
   return (
     <header className="bg-gray-800 text-white shadow-lg">
@@ -32,7 +31,7 @@ function Header({ siteTitle }) {
               className="w-full bg-gray-700 text-white border border-gray-600 rounded-md py-2 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Cari berita..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={onSearchChanges}
             />
           </div>
         </div>
