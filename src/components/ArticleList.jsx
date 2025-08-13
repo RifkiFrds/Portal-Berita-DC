@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ArticleCard from "./ArticleCard";
 
-function ArticleList() {
+function ArticleList({ searchTerm }) {
   // 1. Siapkan "Holy Trinity" states
   const [articles, setArticles] = useState([]); // Mulai dengan array kosong
   const [loading, setLoading] = useState(true);
@@ -28,6 +28,19 @@ function ArticleList() {
     fetchArticles();
   }, []); // Depedency array kosong, artinya efek ini hanya berjlan SEKALI
 
+    const filteredArticles = articles.filter(article =>
+    article.title.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+
+  if (filteredArticles.length === 0) {
+    return (
+    <div className="text-2xl font-bold mb-4 text-center">
+      <p>Artikel yang kamu cari "{searchTerm}" tidak ada, Cari yang lain yah!</p>
+    </div>
+    )
+  };
+  
+
   // Conditional Rendering berdasarkan state
   if (loading) {
     return (
@@ -49,7 +62,7 @@ function ArticleList() {
         Daftar Artikel Terkini
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {articles.map((article) => (
+        {filteredArticles.map(article => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
